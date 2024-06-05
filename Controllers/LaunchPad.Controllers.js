@@ -390,15 +390,9 @@ module.exports.getTokenInfo = async (req, res) => {
   try {
     const id = req.params.id;
     const response = await axios.get(
-      `https://rest.cryptoapis.io/blockchain-data/ethereum/sepolia/addresses/${id}/contract`,
-
-      {
-        headers: {
-          "X-API-Key": "c33db022effbd60b1c70be64c4b80e658b12c752",
-        },
-      }
+     
       
-      // `https://cronos.org/explorer/api?module=token&action=getToken&contractaddress=${id} `,
+       `https://cronos.org/explorer/api?module=token&action=getToken&contractaddress=${id} `,
       // {
       //   headers: {
       //     "X-API-Key": "c33db022effbd60b1c70be64c4b80e658b12c752",
